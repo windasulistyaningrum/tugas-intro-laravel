@@ -11,14 +11,15 @@
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
+Route::get('/', function () {
+    return view('table.table');
+});
 
-/*Route::get('/','AuthController@index');
+Route::get('/data-table', function () {
+    return view('table.data-table');
+});
 
-Route::get('/form.html','AuthController@index');*/
-Route::get ('/', 'HomeController@index');
+//Route::get ('/', 'HomeController@index');
 
 Route::get('/register', 'AuthController@register');
 Route::post('welcome', 'AuthController@form');
